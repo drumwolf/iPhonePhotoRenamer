@@ -7,3 +7,7 @@ This project assumes that you have Node.js installed, the npm package manager, a
 ### Node.js
 
 If you don't already have Node, you can get it here:  https://nodejs.org/
+
+### node-exif
+
+You can get it here:  https://github.com/gomfunkel/node-exif
