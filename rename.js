@@ -33,7 +33,7 @@ var renameByEXIFDate = function(oldFileName) {
 			console.error("ERROR: Invalid File");
 		}
 		if (exifData) {
-			var newFileName = getNewFileNameByEXIFDate(oldFileName, exifData.image.ModifyDate);
+			var newFileName = getNewFileNameByEXIFDate(oldFileName, exifData.exif.DateTimeOriginal);
 			fs.rename(oldFileName, newFileName, function(err){
 				if (err) throw err;
 				console.log(oldFileName + " >>>>> " + newFileName);
